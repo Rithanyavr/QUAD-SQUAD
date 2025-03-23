@@ -1,0 +1,338 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - ResearchHub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            background: #4facfe;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .dashboard-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .project-list {
+            list-style: none;
+            padding: 0;
+        }
+        .project-item {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .new-project {
+            display: block;
+            background: #28a745;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+        .new-project:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Welcome to ResearchHub</div>
+    <div class="dashboard-container">
+        <h2>Your Projects</h2>
+        <ul class="project-list">
+            <li class="project-item">Project 1 <span>📄</span></li>
+            <li class="project-item">Project 2 <span>📄</span></li>
+        </ul>
+        <a href="editor.html" class="new-project">+ Create New Collaborative Paper</a>
+    </div>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - CollaboWriter</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #FFD700, #FFB600);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header {
+            background: #FFA500;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .dashboard-container {
+            max-width: 900px;
+            width: 100%;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            margin-top: 20px;
+            text-align: center;
+        }
+        .create-project {
+            background: #FF9500;
+            color: white;
+            padding: 15px;
+            display: block;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            margin: 20px auto;
+            width: 80%;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .create-project:hover {
+            background: #E67E00;
+        }
+        .existing-projects {
+            background: #FFF3CD;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .project-list {
+            list-style: none;
+            padding: 0;
+        }
+        .project-item {
+            background: #FFE28A;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Welcome to CollaboWriter!</div>
+
+    <div class="dashboard-container">
+        <h2>Create a New Project</h2>
+        <a href="editor.html" class="create-project">+ Start a New Collaborative Paper</a>
+
+        <div class="existing-projects">
+            <h2>Existing Projects</h2>
+            <ul class="project-list">
+                <li class="project-item">Project 1 <span>📄</span></li>
+                <li class="project-item">Project 2 <span>📄</span></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - CollaboWriter</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #000101 0%, #006767 100%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 250px;
+            background: #003333;
+            color: white;
+            padding: 20px;
+            height: 100vh;
+            box-shadow: 2px 0 10px rgba(255, 255, 255, 0.2);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .search-box {
+            padding: 8px;
+            border-radius: 5px;
+            border: none;
+            width: 100%;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        .nav-links a {
+            display: block;
+            padding: 12px;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            transition: background 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background: #004d4d;
+        }
+
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .header {
+            background: #1B9999;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .templates-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .template-card {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .template-card:hover {
+            transform: scale(1.05);
+        }
+
+        .template-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .template-card h3 {
+            margin: 10px 0;
+            color: #003333;
+        }
+
+        .template-card a {
+            display: block;
+            background: #1B9999;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .template-card a:hover {
+            background: #157373;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>CollaboWriter</h2>
+        <input type="text" class="search-box" placeholder="Search...">
+        <div class="nav-links">
+            <a href="editor.html">📄 Create New File</a>
+            <a href="#">📁 Recent Works</a>
+            <a href="#">⚙️ Settings</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="header">Welcome to CollaboWriter!</div>
+
+        <h2 style="color: white; text-align: center; margin-top: 20px;">Choose a Template</h2>
+
+        <div class="templates-container">
+            <!-- Template 1 -->
+            <div class="template-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/3159/3159066.png" alt="Research Paper">
+                <h3>Research Paper</h3>
+                <a href="#">Use Template</a>
+            </div>
+
+            <!-- Template 2 -->
+            <div class="template-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/3875/3875145.png" alt="Business Report">
+                <h3>Business Report</h3>
+                <a href="#">Use Template</a>
+            </div>
+
+            <!-- Template 3 -->
+            <div class="template-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/3771/3771518.png" alt="Academic Paper">
+                <h3>Academic Paper</h3>
+                <a href="#">Use Template</a>
+            </div>
+
+            <!-- Template 4 -->
+            <div class="template-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135706.png
+                " alt="Financial Report">
+                <h3>Financial Report</h3>
+                <a href="#">Use Template</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
